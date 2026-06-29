@@ -1,0 +1,24 @@
+fit4110-notify-demo-day  | INFO:     Started server process [7]
+fit4110-notify-demo-day  | INFO:     Waiting for application startup.
+fit4110-notify-demo-day  | INFO:     Application startup complete.
+fit4110-notify-demo-day  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+fit4110-notify-demo-day  | INFO:     172.21.0.1:53366 - "GET /health HTTP/1.1" 200 OK
+fit4110-notify-demo-day  | INFO:     127.0.0.1:36026 - "GET /health HTTP/1.1" 200 OK
+fit4110-notify-demo-day  | INFO:     172.21.0.1:38606 - "POST /api/v1/alerts HTTP/1.1" 422 Unprocessable Entity
+fit4110-notify-demo-day  | INFO:     127.0.0.1:36566 - "GET /health HTTP/1.1" 200 OK
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,132] INFO - Accepted notif-6f041c83 severity=high channels=['telegram', 'email', 'log'] source=team-core event_id=mock-c229c9de
+fit4110-notify-demo-day  | INFO:     172.21.0.1:44076 - "POST /api/v1/alerts HTTP/1.1" 202 Accepted
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,133] WARNING - [NOTIFY:telegram] thiếu TELEGRAM_BOT_TOKEN/CHAT_ID, bỏ qua kênh telegram
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,134] WARNING - [NOTIFY:email] thiếu SMTP_HOST, bỏ qua kênh email
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,134] INFO - [NOTIFY:log] severity=high | Canh bao chay | Lab A101 nhiet do 42C
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,134] INFO - [NOTIFY] kết quả gửi: {'telegram': False, 'email': False, 'log': True}
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,429] INFO - Accepted notif-b830b067 severity=low channels=['log'] source=team-core event_id=mock-ec78d839
+fit4110-notify-demo-day  | INFO:     172.21.0.1:44086 - "POST /api/v1/alerts HTTP/1.1" 202 Accepted
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,430] INFO - [NOTIFY:log] severity=low | Thong tin | Pin thiet bi 18%
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,430] INFO - [NOTIFY] kết quả gửi: {'log': True}
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,826] INFO - Accepted notif-8cae6dd7 severity=high channels=['log'] source=team-core event_id=mock-03d23224
+fit4110-notify-demo-day  | INFO:     172.21.0.1:44092 - "POST /api/v1/alerts HTTP/1.1" 202 Accepted
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,827] INFO - [NOTIFY:log] severity=high | dup | dup
+fit4110-notify-demo-day  | [2026-06-18 16:05:47,827] INFO - [NOTIFY] kết quả gửi: {'log': True}
+fit4110-notify-demo-day  | INFO:     127.0.0.1:57378 - "GET /health HTTP/1.1" 200 OK
+fit4110-notify-demo-day  | INFO:     172.21.0.1:34388 - "GET /health HTTP/1.1" 200 OK

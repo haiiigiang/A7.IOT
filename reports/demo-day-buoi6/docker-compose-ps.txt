@@ -1,0 +1,2 @@
+NAME                      IMAGE                      COMMAND                  SERVICE   CREATED              STATUS                        PORTS
+fit4110-notify-demo-day   demo-day-team-notify-api   "sh -c 'uvicorn noti…"   api       About a minute ago   Up About a minute (healthy)   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
